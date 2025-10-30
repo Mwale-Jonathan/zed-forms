@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Menu, X } from "lucide-react";
+import { ArrowRight, Menu, X, ClipboardList } from "lucide-react";
 
 export default function StickyNav() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,11 +13,7 @@ export default function StickyNav() {
                 <div className="flex h-14 items-center justify-between">
                     {/* Logo and Brand */}
                     <Link className="flex items-center gap-1.5" href="/">
-                        <svg width="148" height="186" viewBox="0 0 148 186" fill="none" xmlns="http://www.w3.org/2000/svg" className="size-6">
-                            <path d="M112.51 95.1057C113.233 55.1323 74 0.250061 74 0.250061C74 0.250061 37 55.3439 37 95.1057C37 160.583 74 185.25 74 185.25C74 185.25 111.326 160.583 112.51 95.1057Z" fill="currentColor" className="text-primary/70" />
-                            <path d="M148 74.25C148 47.0435 135.667 24.9167 135.667 24.9167C135.667 24.9167 61.6667 61.9167 61.6667 135.917C61.6667 155.775 74 185.25 74 185.25C74 185.25 148 148.25 148 74.25Z" fill="currentColor" className="text-primary/50" />
-                            <path d="M4.57764e-05 74.25C0.00012207 47.0435 12.3334 24.9167 12.3334 24.9167C12.3334 24.9167 86.3334 61.9167 86.3334 135.917C86.3334 155.775 74 185.25 74 185.25C74 185.25 -0.000167847 148.25 4.57764e-05 74.25Z" fill="currentColor" className="text-primary/50" />
-                        </svg>
+                        <ClipboardList className="size-6 text-primary" />
                         <span className="font-medium">zedforms</span>
                     </Link>
 
